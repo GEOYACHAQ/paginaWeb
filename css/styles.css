@@ -67,7 +67,10 @@ body, p {
 
 .icon-valores{
 	font-size: 120px;
-	color: #b74a2d;
+	color: #f17b31;
+}
+.testimonial-author{
+	color: white;
 }
 
 .p-heading {
@@ -1224,14 +1227,14 @@ input[type='checkbox'] {
 }
 
 .slider .swiper-button-prev {
-	left: -0.5rem;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23787976'%2F%3E%3C%2Fsvg%3E");
+	left: -0.1rem;
+	background-image: url("../images/arrow-left-bold-svgrepo-com.svg");
 	background-size: 1.125rem 1.75rem;
 }
 
 .slider .swiper-button-next {
-	right: -0.5rem;
-	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23787976'%2F%3E%3C%2Fsvg%3E");
+	right: -0.1rem;
+	background-image: url("../images/arrow-right-bold-svgrepo-com.svg");
 	background-size: 1.125rem 1.75rem;
 }
 
@@ -1259,7 +1262,7 @@ input[type='checkbox'] {
 }
 
 .slider .testimonial-author {
-	color: #484a46;
+	color: white;
 }
 
 
