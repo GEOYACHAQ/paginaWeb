@@ -790,7 +790,7 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/header-background.jpg') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/intro-office.jpg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -1904,7 +1904,7 @@ a:hover.back-to-top {
 	
 	.navbar-custom .nav-item .nav-link:hover,
 	.navbar-custom .nav-item .nav-link.active {
-		color: #14bf98;
+		color: #1d120c;
 	}
 
 	.navbar-custom.top-nav-collapse {
