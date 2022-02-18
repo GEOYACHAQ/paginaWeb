@@ -174,6 +174,24 @@ strong {
 	transition: all 0.2s;
 }
 
+.btn-solid-lg-conocenos {
+	display: inline-block;
+	padding: 1.375rem 2.125rem 1.375rem 2.125rem;
+	border: 0.125rem solid #1ba77a;
+	border-radius: 0.25rem;
+	background-color: #1ba77a;
+	color: #fff;
+	font: 700 0.75rem/0 "Montserrat", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-solid-lg-conocenos:hover {
+	background-color: transparent;
+	color: #1ba77a;
+	text-decoration: none;
+}
+
 .btn-solid-lg:hover {
 	background-color: transparent;
 	color: #14bf98;
@@ -655,8 +673,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 50px;
-	height: 80px;
+    width: 7.0625rem;
+	height: 2rem;
 	-webkit-backface-visibility: hidden;
 }
 
