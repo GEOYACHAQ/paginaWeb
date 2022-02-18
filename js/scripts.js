@@ -26,8 +26,14 @@
     $(window).on('scroll load', function() {
 		if ($(".navbar").offset().top > 20) {
 			$(".fixed-top").addClass("top-nav-collapse");
+            $("#imgLogo").css("width","128px");
+            $("#imgLogo").css("height","76px");
+            console.log("hola")
 		} else {
 			$(".fixed-top").removeClass("top-nav-collapse");
+            $("#imgLogo").css("width","277px");
+            $("#imgLogo").css("height","165px");
+            console.log("chau")
 		}
     });
 
