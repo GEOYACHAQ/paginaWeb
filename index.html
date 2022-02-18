@@ -67,7 +67,7 @@
                     <a class="nav-link page-scroll" href="#callMe">PROYECTOS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projects">REDES</a>
+                    <a class="nav-link page-scroll" href="#contact">CONTACTO</a>
                 </li>
 
                 <!-- Dropdown Menu -->          
@@ -1044,9 +1044,9 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <div class="section-title">CONTACT</div>
-                        <h2>Get In Touch Using The Form</h2>
-                        <p>You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
+                        <div class="section-title">CONTÁCTANOS</div>
+                        <h2>Descubre más sobre nosotros, envianos tus dudas.</h2>
+                        <p>Envianos un mensaje y obtén más información sobre nuestro emprendimiento.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="address"><i class="fas fa-map-marker-alt"></i>22nd Innovative Street, San Francisco, CA 94043, US</li>
                             <li><i class="fas fa-phone"></i><a href="tel:003024630820">+81 720 22 126</a></li>
@@ -1093,31 +1093,27 @@
                         </span>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-6">
+                <div class="col-lg-6" style="margin-top: 50px;">
                     
                     <!-- Contact Form -->
                     <form id="contactForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
                             <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                            <label class="label-control" for="cname">Nombre</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+                            <label class="label-control" for="cemail">Correo</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
                             <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
+                            <label class="label-control" for="cmessage">Escribe tu mensaje</label>
                             <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
+                        </div> 
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                            <button id="btnSendMessage" class="form-control-submit-button">ENVIA TU MENSAJE</button>
                         </div>
                         <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
@@ -1134,7 +1130,7 @@
 
     <!-- Footer -->
     <div class="footer">
-        <div class="container" style="margin-top: 50px;">
+        <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <div class="text-container about">
@@ -1142,54 +1138,10 @@
                         <p class="white">We're passionate about delivering the best business growth services for companies just starting out as startups or industry players that have established their market position a long tima ago.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-md-2">
-                    <div class="text-container">
-                        <h4>Links</h4>
-                        <ul class="list-unstyled li-space-lg white">
-                            <li>
-                                <a class="white" href="#your-link">startupguide.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="terms-conditions.html">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
+                
+                
                 </div> <!-- end of col -->
-                <div class="col-md-2">
-                    <div class="text-container">
-                        <h4>Tools</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">businessgrowth.com</a>
-                            </li>
-                            <li>
-                               <a class="white" href="#your-link">influencers.com</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="#your-link">optimizer.net</a>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-md-2">
-                    <div class="text-container">
-                        <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">unicorns.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="#your-link">staffmanager.com</a>
-                            </li>
-                            <li>
-                                <a class="white" href="#your-link">association.gov</a>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
+               
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of footer -->  
@@ -1206,5 +1158,7 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 </html>
