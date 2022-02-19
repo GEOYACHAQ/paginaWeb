@@ -28,12 +28,10 @@
             $(".fixed-top").addClass("top-nav-collapse");
             $("#imgLogo").css("width", "128px");
             $("#imgLogo").css("height", "76px");
-            console.log("hola")
         } else {
             $(".fixed-top").removeClass("top-nav-collapse");
             $("#imgLogo").css("width", "277px");
             $("#imgLogo").css("height", "165px");
-            console.log("chau")
         }
     });
 
@@ -41,6 +39,7 @@
     $(function () {
         $(document).on('click', 'a.page-scroll', function (event) {
             var $anchor = $(this);
+            console.log($anchor)
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top
             }, 600, 'easeInOutExpo');
