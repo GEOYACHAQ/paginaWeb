@@ -72,6 +72,11 @@ body, p {
 .testimonial-author{
 	color: #1d120c;
 }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #495057;
+    background-color: #d0ad6b;
+    border-color: #d0ad6b #d0ad6b #d0ad6b;
+}
 
 .p-heading {
 	margin-bottom: 3.5rem;
@@ -833,7 +838,7 @@ input[type='checkbox'] {
 /*********************/
 .basic-1 {
 	padding-top: 6.5rem;
-	padding-bottom: 3rem;
+	padding-bottom: 5rem;
 }
 
 .basic-1 .text-container {
@@ -1001,7 +1006,7 @@ input[type='checkbox'] {
 /*************************/
 .accordion .area-1 {
 	height: 27rem;
-	background: url('../images/participacion-ciudadana.jpeg') center center no-repeat;
+	background: url('../images/mision.jpeg') center center no-repeat;
 	background-size: cover;
 }
 
@@ -1082,11 +1087,11 @@ input[type='checkbox'] {
 /*     09. Details 2     */
 /*************************/
 .tabs .tabs-container {
-	max-width: 90%;
+	max-width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 2rem;
-	padding-bottom: 5.75rem;
+	/*padding-bottom: 5.75rem;*/
 }
 
 .tabs .nav-tabs {
@@ -1096,12 +1101,12 @@ input[type='checkbox'] {
 }
 
 .tabs .nav-link {
-	margin-right: 1.625rem;
+	margin-right: 0.5rem;
 	margin-bottom: 0.875rem;
 	padding: 0;
 	border: none;
 	border-radius: 0.25rem;
-	color: #c1cace;
+	color: #9e865b;
 	font: 700 1.375rem/1.375rem "Montserrat", sans-serif;
 	text-decoration: none;
 	transition: all 0.2s ease;
@@ -1109,13 +1114,13 @@ input[type='checkbox'] {
 
 .tabs .nav-link:hover,
 .tabs .nav-link.active {
-	color: #14bf98;
+	color: #495057;
 }
 
 .tabs .nav-link .fas {
 	margin-right: 0.125rem;
 	font-size: 0.875rem;
-	vertical-align: 20%;
+	/*vertical-align: 20%;*/
 }
 
 .tabs #tab-1 .progress-container {
@@ -1191,7 +1196,7 @@ input[type='checkbox'] {
 
 .tabs .area-2 {
 	height: 27rem;
-	background: url('../images/desarrollo-sostenible.JPG') center center no-repeat;
+	background: url('../images/Foto_Vision.JPG') center center no-repeat;
 	background-size: cover;
 }
 
@@ -1340,7 +1345,7 @@ input[type='checkbox'] {
 /************************/
 .filter {
 	padding-top: 6.5rem;
-	padding-bottom: 7rem;
+	padding-bottom: 15rem;
 }
 
 .filter .section-title {
@@ -1457,7 +1462,7 @@ input[type='checkbox'] {
 
 .lightbox-basic .line-heading {
 	width: 3rem;
-	height: 1px;
+	height: 5px;
 	margin-top: 0;
 	margin-bottom: 0.625rem;
 	margin-left: 0;
@@ -1878,6 +1883,17 @@ a:hover.back-to-top {
 		padding-top: 0px !important;
 		padding-bottom: 0px !important;
 	}
+	.filter {
+		padding-top: 6.5rem;
+		padding-bottom: 12rem;
+	}
+	
+element.style {
+    margin-right: 30px;
+}
+.slider .swiper-button-next{
+	margin-right: 30px;
+}
 }
 
 @media (min-width: 768px) {
@@ -1981,7 +1997,7 @@ a:hover.back-to-top {
 
 	/* Details 2 */
 	.tabs .tabs-container {
-		max-width: 70%;
+		/*max-width: 70%;*/
 	}
 
 	.tabs #tab-2 .list-unstyled {

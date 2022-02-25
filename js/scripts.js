@@ -404,9 +404,9 @@
                     event.preventDefault();
                     Email.send({
                         Host: "smtp.elasticemail.com",
-                        Username: "royparra12@gmail.com",
-                        Password: "1BD753BE47C95BF63E9A590BC63E370DBC8C",
-                        To: 'royparra12@gmail.com',
+                        Username: "comunicaciones@geoyachaq.org.pe",
+                        Password: "8BF562F1EAA2DDCE36EBB905D249956C59C5",
+                        To: 'comunicaciones@geoyachaq.org.pe',
                         From: email,
                         Subject: "Mensaje formulario pagina Web",
                         Body: mensaje
@@ -435,6 +435,33 @@
 
 
 
+    });
+
+    var isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+        }
+    };
+    
+    $(document).ready(function() {
+        if (isMobile.any()) {
+            $("#n_wsp").attr("href", "https://api.whatsapp.com/send?phone=51993096763&text=%C2%A1Hola!%20%F0%9F%A4%A9%F0%9F%92%9A%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto.")
+        }
     });
 
 
