@@ -4,7 +4,9 @@
    Description: Custom JS file
 */
 
-
+var key = "";
+var v1 = "Y29tdW5pY2FjaW9uZXNAZ2VveWFjaGFxLm9yZy5wZQ==";
+var v2 = "Z2VveWFjaGFxLmNvbXVuaWNhY2lvbmVzQGdtYWlsLmNvbQ==";
 (function ($) {
     "use strict";
 
@@ -372,7 +374,7 @@
 
     $("#btnSendMessage").click(function (event) {
 
-        if ($("#cname").val() == "") {
+       if ($("#cname").val() == "") {
             var msgClasses = "h3 text-center";
             $("#cmsgSubmit").removeClass().addClass(msgClasses).text("Ingrese el nombre");
             setTimeout(function () {
@@ -386,7 +388,7 @@
                 setTimeout(function () {
                     $("#cmsgSubmit").addClass("h3 text-center tada animated").text("");
                 }, 3000);
-
+                
 
             } else {
                 if ($("#cmessage").val() == "") {
@@ -403,13 +405,11 @@
                     $("#btnSendMessage").prop("disable", true);
                     event.preventDefault();
                     Email.send({
-                        Host: "",
-                        Username: "",
-                        Password: "",
-                        To: '',
-                        From: email,
-                        Subject: "Mensaje formulario pagina Web",
-                        Body: mensaje
+                        SecureToken : "89c667d1-447d-4003-94e8-d25227b3435b",
+                        To : atob(CryptoJS.AES.decrypt(v1,key).toString(CryptoJS.enc.Utf8)),
+                        From : atob(CryptoJS.AES.decrypt(v2,key).toString(CryptoJS.enc.Utf8)),
+                        Subject : 'Mensaje - Página  Web',
+                        Body : '<center><div style="width: 90%; margin: 20px;"><div style="height: 150px; width: 100%; background-color: #1d120c; margin-bottom: 30px;" > </div><div> <h1 style="color: #1ba77a; text-align: center;">GEOYACHAQ - CORREO</h1> <p style="text-align: center; font-size: 30px; margin-bottom: 5px;">'+nombre+'</p><p style="text-align: center; margin-top: 5px;">ha enviado un mensaje:</p><p style="text-align: center; font-size: 20px;">'+mensaje+'</p><p>Responde a: '+email+'</p><div style="height: 100px; width: 100%; background-color: #1d120c; margin-top: 30px;" > </div></div></div></center>'
                     }).then(
                         message => {
                             if (message == "OK") {
@@ -432,8 +432,6 @@
 
             }
         }
-
-
 
     });
 
@@ -463,6 +461,21 @@
             $("#n_wsp").attr("href", "https://api.whatsapp.com/send?phone=51993096763&text=%C2%A1Hola!%20%F0%9F%A4%A9%F0%9F%92%9A%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20proyecto.")
         }
     });
+
+    window.onload = function(){
+
+        const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let result1= ' ';
+        const charactersLength = characters.length;
+        for ( let i = 0; i < 8; i++ ) {
+        result1 += characters.charAt(Math.floor(Math.random() * charactersLength));
+        } 
+
+        key = result1;
+
+        v1 = CryptoJS.AES.encrypt(v1,key);
+        v2 = CryptoJS.AES.encrypt(v2,key);
+    }
 
 
 })(jQuery);
