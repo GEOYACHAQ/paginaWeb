@@ -403,10 +403,10 @@
                     $("#btnSendMessage").prop("disable", true);
                     event.preventDefault();
                     Email.send({
-                        Host: "smtp.elasticemail.com",
-                        Username: "comunicaciones@geoyachaq.org.pe",
-                        Password: "8BF562F1EAA2DDCE36EBB905D249956C59C5",
-                        To: 'comunicaciones@geoyachaq.org.pe',
+                        Host: "",
+                        Username: "",
+                        Password: "",
+                        To: '',
                         From: email,
                         Subject: "Mensaje formulario pagina Web",
                         Body: mensaje
