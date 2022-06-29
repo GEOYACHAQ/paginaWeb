@@ -869,11 +869,11 @@ input[type='checkbox'] {
 	transition: all 0.3s;
 }
 
-.basic-1 .image-container:hover img {
+/*.basic-1 .image-container:hover img {
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
-} 
+} */
 /* end of hover animation */
 
 
@@ -1409,11 +1409,11 @@ input[type='checkbox'] {
 	transition: all 0.3s;
 }
 
-.filter .element-item:hover img {
+/*.filter .element-item:hover img {
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
-} 
+} */
 /* end of hover animation */
 
 .filter .element-item .element-item-overlay { 
@@ -1551,11 +1551,11 @@ input[type='checkbox'] {
 	transition: all 0.3s;
 }
 
-.basic-2 .image-wrapper:hover img {
+/*.basic-2 .image-wrapper:hover img {
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
-} 
+} */
 /* end of hover animation */
 
 .basic-2 .team-member .p-large {
@@ -2514,4 +2514,20 @@ element.style {
 .carousel-control-prev, .carousel-control-next{
 	opacity: 100 !important;
 }
-
+.text-title-name{
+	color: #1d120c;
+	font-weight: bold;
+}
+.facebook-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.facebook-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
